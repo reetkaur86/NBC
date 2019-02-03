@@ -10,7 +10,6 @@ import { StarWarsService } from './star-wars.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
   people: any[];
 
   constructor(private swService: StarWarsService) {}
