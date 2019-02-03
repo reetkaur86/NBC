@@ -35,7 +35,7 @@ router.get('/', (req, res) =>
       );
     })
     .subscribe(
-      response => res.send(response),
+      response => res.send(response.results),
       err => res.status(500).send(err.message),
     ));
 
