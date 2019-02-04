@@ -7,7 +7,7 @@ export class StarWarsService {
   constructor(private http: HttpClient) { }
 
   getPeople() {
-  	return this.http.get<any>('/API/v1/star-wars');
+    return this.http.get<any>('/API/v1/star-wars');
   }
 
 }

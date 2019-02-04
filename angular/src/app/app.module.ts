@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { StarWarsService } from './star-wars.service';
+import { StarWarsService } from './starwars.service';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { StarWarsService } from './star-wars.service';
     HttpClientModule,
   ],
   providers: [
-  	StarWarsService
+    StarWarsService
   ],
   bootstrap: [AppComponent]
 })

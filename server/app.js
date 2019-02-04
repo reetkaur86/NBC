@@ -15,10 +15,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/API/v1', apiRouter);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
-});
-
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   next(createError(404));
