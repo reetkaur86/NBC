@@ -3,11 +3,7 @@
 ## Instructions:
 
 Step 0:
-If you do have NPM set up on your system, please follow the instructions here:
-[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-
-If you do not have yarn installed on your system, please run:
-npm install -g yarn
+If you do not have yarn, please follow the guide [here](https://yarnpkg.com/en/docs/install)
 
 Step 1:
 Enter the /server folder, then install by running:
