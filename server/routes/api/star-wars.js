@@ -8,8 +8,9 @@ const url = 'https://swapi.co/api/people/';
 
 router.get('/', (req, res) =>
   Rx.Observable.create((observer) => {
-      request(
-        url,
+    const formattedUrl = req.query.search && req.query.search.length ? url + '?search=' + req.query.search : url;
+    request(
+        formattedUrl,
         {
           method: 'GET',
           json: true,

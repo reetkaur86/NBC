@@ -10,4 +10,8 @@ export class StarWarsService {
     return this.http.get<any>('/API/v1/star-wars');
   }
 
+  searchPeopple(value: any) {
+   return this.http.get<any>(`/API/v1/star-wars?search=${value}`);
+  }
+
 }

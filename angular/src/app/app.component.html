@@ -1,12 +1,18 @@
-<div>
-  <h1>
-    Intergalactic Star Wars Database
-  </h1>
+<div class="wrapper">
+  <div>
+    <h1>
+      Intergalactic Star Wars Database
+    </h1>
+  </div>
+  <input placeholder="Search the Star Wars universe..." [(ngModel)]="searchValue" (keyup)="onKeyUp()" />
+  <div class="user-info">
+    <p *ngFor="let person of people">
+      {{person.name}}
+    </p>
+    <p *ngIf="!people.length && !showLoader">Results not found</p>
+    <div *ngIf="showLoader">
+      <div class="back-color"></div>
+      <img class='loader'  src="../assets/loader.gif" />
+    </div>
+  </div>
 </div>
-<input placeholder="Search the Star Wars universe..." />
-<div>
-  <p *ngFor="let person of people">
-    {{person.name}}
-  </p>
-</div>
-

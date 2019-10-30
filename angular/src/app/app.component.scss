@@ -1,0 +1,45 @@
+.wrapper{
+    display: table;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 1px #5d5c5c;
+    h1{
+        margin-top:0;
+    }
+    input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    p{
+        background-color: #dedede;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin: 0;
+        border-bottom: 1px solid #fffefe;
+    }
+    .loader{
+        width: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .back-color{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background-color:rgba(0,0,0,0.75);
+    }
+    .user-info{
+        margin:10px 0;
+    }
+}
+
+
