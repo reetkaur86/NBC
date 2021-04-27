@@ -23,7 +23,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "morgan": "~1.9.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "request": "^2.85.0",
     "s3-proxy": "^1.1.1",
     "solr-query-builder": "^1.0.1",
